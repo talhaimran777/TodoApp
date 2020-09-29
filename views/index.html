@@ -13,9 +13,36 @@
     <title>To Do App</title>
 </head>
 <body>
-    <h1>Building a To Do App </h1>
-    <p>With Mongo Db, Express and Node.js</p>
 
+    <div class="todo-app py-5">
+        <div class="wrapper d-flex justify-content-around p-5 rounded mb-5">
+            <form action="#" method="post" class = "todo-form">
+                <input class = "form-control form-control-lg" type="text" name="getData" placeholder="e.g) Eggs">
+            </form>
+    
+            <a href="#" type = "submit" class="btn btn-primary btn-lg">Add</a>
+        </div>
+
+        <ul class = "list-unstyled">
+            <li class = "d-flex justify-content-around py-3 border mb-3 rounded">
+                <h3 class = "item-text align-self-center text-secondary">Eggs</h3>
+
+                <div class="btn-wrapper align-self-center">
+                    <a href="#" class="btn btn-outline-success">Edit</a>
+                    <a href="#" class="btn btn-outline-danger">Delete</a>
+                </div> 
+            </li>
+            <li class = "d-flex justify-content-around py-3 border mb-3 rounded">
+                <h3 class = "item-text align-self-center text-secondary">Eggs</h3>
+
+                <div class="btn-wrapper align-self-center">
+                    <a href="#" class="btn btn-outline-success">Edit</a>
+                    <a href="#" class="btn btn-outline-danger">Delete</a>
+                </div> 
+            </li>
+        </ul>
+       
+    </div>
 
     <!-- Jquery -->
     <script src="./js/jquery.min.js"></script>

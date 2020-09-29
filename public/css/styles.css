@@ -7,5 +7,21 @@ html{
 }
 
 body{
-    background: green;
+}
+
+.todo-app{
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+.todo-form{
+    min-width: 23rem;
+}
+
+.wrapper{
+    background-color: rgb(153, 149, 149);
+}
+
+.item-text{
+    font-size: 2rem;
 }
