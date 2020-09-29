@@ -15,14 +15,16 @@
 <body>
 
     <div class="todo-app py-5">
-        <div class="wrapper d-flex justify-content-around p-5 rounded mb-5">
-            <form action="#" method="post" class = "todo-form">
-                <input class = "form-control form-control-lg" type="text" name="getData" placeholder="e.g) Eggs">
-            </form>
-    
-            <a href="#" type = "submit" class="btn btn-primary btn-lg">Add</a>
-        </div>
 
+        <div class="jumbotron">
+            <form action = "submit" method= "POST">
+                <div class="d-flex justify-content-center">
+                    <input autofocus autocomplete="off" class="form-control form-control-lg mr-3" type="text" style="flex: 1;" name = "data">
+                    <button class="btn btn-primary btn-lg">Add</button>
+                </div>
+            </form>
+        </div>  
+    
         <ul class = "list-unstyled">
             <li class = "d-flex justify-content-around py-3 border mb-3 rounded">
                 <h3 class = "item-text align-self-center text-secondary">Eggs</h3>
