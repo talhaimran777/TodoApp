@@ -14,6 +14,7 @@ mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: tr
         db = client.db();
         console.log('Connected to the mongodb')
         app.listen(3000, () => console.log('Listening for requests'));
+
     }
     else{
         console.log("Error Connecting to the data base");
@@ -67,6 +68,18 @@ app.post('/update-item', (req, res) => {
     })
     .catch('Data could not be updated!');
 
+});
+
+app.post('/delete-item', (req, res) =>{
+    let idToBeDeleted = req.body.id;
+    console.log('ID:: ', idToBeDeleted);
+    db.collection('items').deleteOne({_id: new mongodb.ObjectID(idToBeDeleted)})
+    .then(()=>{
+        res.send('Item was successfully deleted.');
+    })
+    .catch(()=>{
+        console.log('Error Deleting Item!');
+    });
 });
 
 
